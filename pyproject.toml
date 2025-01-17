@@ -56,3 +56,7 @@ kokoro = ["*.py", "*.js"]
 
 [tool.flit.metadata]
 module = "kokoro"
+
+
+[tool.setuptools.packages.find]
+where = ["kokoro"]
