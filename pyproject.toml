@@ -1,3 +1,58 @@
 [build-system]
 requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "kokoro"
+version = "0.1.0"  # Ensure this is consistent with the version in the repository
+description = "Inference library for Kokoro-82M model"
+readme = "README.md"
+requires-python = ">=3.6"  # Updated to match PyPI metadata
+license = {file = "LICENSE"}
+
+authors = [
+    { name = "hexgrad", email = "hello@hexgrad.com" }  # Ensure email is correct
+]
+
+maintainers = [
+    { name = "hexgrad", email = "hello@hexgrad.com" }  # Ensure email is correct
+]
+
+keywords = ["kokoro", "inference", "machine-learning", "language-model", "kokoro-82m"]
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+
+dependencies = [
+    "misaki>=0.2.0",  # Placeholder, ensure correct dependencies
+    "numpy>=1.21.0",
+    "torch>=1.10.0",
+]
+
+dynamic = ["long_description"]
+
+[project.urls]
+"Homepage" = "https://github.com/hexgrad/kokoro"
+"Source Code" = "https://github.com/hexgrad/kokoro"
+"Issue Tracker" = "https://github.com/hexgrad/kokoro/issues"
+"Model" = "https://hf.co/hexgrad/Kokoro-82M"
+
+[tool.setuptools.packages]
+find = {}
+
+[tool.setuptools.package-data]
+kokoro = ["*.py", "*.js"]
+
+[tool.flit.metadata]
+module = "kokoro"
