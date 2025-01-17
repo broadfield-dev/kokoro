@@ -35,11 +35,11 @@ classifiers = [
 ]
 
 dependencies = [
-"numpy",
-"phonemizer",
-"scipy",
-"torch",
-"transformers",
+    "numpy",
+    "phonemizer",
+    "scipy",
+    "torch",
+    "transformers",
 ]
 
 dynamic = ["long_description"]
@@ -51,4 +51,4 @@ dynamic = ["long_description"]
 "Model" = "https://hf.co/hexgrad/Kokoro-82M"
 
 [tool.setuptools.packages.find]
-where = ["kokoro"]
+where = ["."]
