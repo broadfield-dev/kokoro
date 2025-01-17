@@ -35,9 +35,11 @@ classifiers = [
 ]
 
 dependencies = [
-    "misaki>=0.2.0",  # Placeholder, ensure correct dependencies
-    "numpy>=1.21.0",
-    "torch>=1.10.0",
+"numpy",
+"phonemizer",
+"scipy",
+"torch",
+"transformers",
 ]
 
 dynamic = ["long_description"]
