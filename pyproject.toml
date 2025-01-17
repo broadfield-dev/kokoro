@@ -48,15 +48,5 @@ dynamic = ["long_description"]
 "Issue Tracker" = "https://github.com/hexgrad/kokoro/issues"
 "Model" = "https://hf.co/hexgrad/Kokoro-82M"
 
-[tool.setuptools.packages]
-find = {}
-
-[tool.setuptools.package-data]
-kokoro = ["*.py", "*.js"]
-
-[tool.flit.metadata]
-module = "kokoro"
-
-
 [tool.setuptools.packages.find]
 where = ["kokoro"]
