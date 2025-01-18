@@ -1,4 +1,5 @@
 # https://github.com/yl4579/StyleTTS2/blob/main/models.py
+import istftnet
 from istftnet import AdaIN1d, Decoder
 from munch import Munch
 from pathlib import Path
